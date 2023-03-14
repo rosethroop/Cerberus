@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
-    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title>A note from your SUNY Oswego Admissions counselor</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
     <!--[if gte mso 9]>
@@ -32,8 +32,8 @@
     <![endif]-->
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
-    <!--[if !mso]><!-->
-    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+  <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
@@ -233,7 +233,7 @@
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
-            (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
+            Hi {{Preferred}}!
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
@@ -266,106 +266,68 @@
 	            </tr>
 		        <!-- Email Header : END -->
 
-                <!-- Hero Image, Flush : BEGIN -->
-                <tr>
-                    <td style="background-color: #ffffff;" class="darkmode-bg">
-                        <img src="https://via.placeholder.com/1200x600" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
-                    </td>
-                </tr>
-                <!-- Hero Image, Flush : END -->
+
 
                 <!-- 1 Column Text + Button : BEGIN -->
                 <tr>
                     <td style="background-color: #ffffff;" class="darkmode-bg">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #222222; font-weight: normal;">This is the H1 Praesent laoreet.</h1>
-                                    <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                <td style="padding: 20px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #222222;">
+                                    <h1 style="margin: 0 0 0 0; font-family: 'Montserrat', sans-serif; font-size: 1.75rem; line-height: 2.25rem; color: #222222; font-weight: bold;">Congratulations on {{Preferred}}’s acceptance to Oswego!</h1>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 0 20px;">
-                                    <!-- Button : BEGIN -->
-                                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
-                                        <tr>
-                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-											     <a class="button-a button-a-primary" href="https://www.oswego.edu" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
-											</td>
-                                        </tr>
-                                    </table>
-                                    <!-- Button : END -->
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #333333; text-align: left; font-weight:bold;">
+                                    <p style="margin: 0;">It was a big day for your student and for you! As a partner in this college process, thank you for helping nudge, remind or perhaps even badger your student to complete the necessary steps in this crazy admissions journey! </p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                                    <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">Praesent in felis ut velit pretium lobortis rhoncus ut erat.</h2>
-                                    <ul style="padding: 0; margin: 0 0 10px 0; list-style-type: disc;">
-										<li style="margin:0 0 10px 30px;" class="list-item-first">A list item.</li>
-										<li style="margin:0 0 10px 30px;">Another list item here.</li>
-										<li style="margin: 0 0 0 30px;" class="list-item-last">Everyone gets a list item, list items for everyone!</li>
-									</ul>
-                                    <p style="margin: 0;">Under bullet list... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <p style="margin: 0;">Like many families, you may find the process overwhelming at times, but please know I’m here to help you along the way. Here is my contact information: </p>
                                 </td>
                             </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <p style="margin: 0;">
+                                        Phone: 315.312.2250<br>
+                                        Email: <a href="mailto:gabrielle.golfo@oswego.edu">gabrielle.golfo@oswego.edu</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <p style="margin: 0;">You’ll be receiving important information from our community partners. I would suggest creating a file or box at home where you can set aside information as you receive it and review it together.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <h2 style="margin: 0 0 10px 0; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; line-height: 1.75rem; color: #333333; font-weight: bold;">As a key supporter, please consider assisting in the following ways:</h2>
+                                    <ol>  
+                                        <li style="margin:0 0 10px 0px;" class="list-item-first">Has {{Preferred}} applied for Financial Aid? You can request help from our friendly Financial Aid Office by calling 315.312.2248. Students and families reapply for aid from year to year, so keep aid application info together with your important documents.</li>
+
+                                        <li style="margin:0 0 10px 0px;">Plan a visit! It’s about fit and we want to make sure Oswego is going to be right for {{Preferred}}. Register for in-person and/or virtual visits at <a href="https://ww1.oswego.edu/admissions/undergraduate-admissions/plan-your-visit">oswego.edu/visit</a>.</li>
+
+                                        <li style="margin:0 0 10px 0px;">The Applicant Portal is one way we keep students posted about next steps in the enrollment process, so encourage {{Preferred}} to check it regularly. <a href="https://ww1.oswego.edu/admissions/undergraduate-admissions/applicant-portal">oswego.edu/appstatus</a>.</li>
+
+                                        <li style="margin: 0 0 0 0px;" class="list-item-last">Stay in touch! I’m here to help you navigate this process.</li>
+                                    </ol>
+                                    <p style="margin: 0;">Again, congratulations! I look forward to hearing from you. 
+                                    </p>
+                                </td>
+                            </tr>
+
                         </table>
                     </td>
                 </tr>
                 <!-- 1 Column Text + Button : END -->
 
-                <!-- 2 Even Columns : BEGIN -->
-                <tr>
-                    <td style="padding: 0 10px 40px 10px; background-color: #ffffff;" class="darkmode-bg">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                                <td valign="top" width="50%">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="https://via.placeholder.com/200" width="200" height="" alt="alt_text" border="0" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
-                                               <p style="margin: 0;">Left column... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td valign="top" width="50%">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="https://via.placeholder.com/200" width="200" height="" alt="alt_text" border="0" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
-                                                <p style="margin: 0;">Right column... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <!-- 2 Even Columns : END -->
-
-                <!-- Clear Spacer : BEGIN -->
-                <!-- <tr>
-                    <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
-                        &nbsp;
-                    </td>
-                </tr> -->
-                <!-- Clear Spacer : END -->
-
+ 
                 <!-- 1 Column Text : BEGIN -->
                 <tr>
                     <td style="background-color: #ffffff;" class="darkmode-bg">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <td style="padding: 20px; font-family:'Montserrat', sans-serif; font-size: 1rem; line-height: 1.25rem; color: #555555;">
                                     <p style="margin: 0;">Text above the footer ... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
                                 </td>
                             </tr>
@@ -374,10 +336,38 @@
                 </tr>
                 <!-- 1 Column Text : END -->
 
+                 <!-- Signature Text : BEGIN -->
+                 <tr>
+                    <td style="background-color: #ffffff;" class="darkmode-bg">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px; font-family:'Montserrat', sans-serif; font-size: 1rem; line-height: 1.25rem; color: #555555;">
+                                    <p style="margin: 0;">Text above the footer ... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- CTA Text : END -->
+
+                                 <!-- Signature Text : BEGIN -->
+                                 <tr>
+                                    <td style="background-color: #ffffff;" class="darkmode-bg">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding: 20px; font-family:'Montserrat', sans-serif; font-size: 1rem; line-height: 1.25rem; color: #555555;">
+                                                    <p style="margin: 0;">Text above the footer ... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                 <!-- CTA Text : END -->
+
             </table>
             <!-- Email Body : END -->
 
-            <!-- New Email Footer : BEGIN -->
+            <!-- Oz Email Footer : BEGIN -->
 
             
 
@@ -440,7 +430,7 @@
 
 
 
-            <!-- New Email Footer : END -->
+            <!-- Oz Email Footer : END -->
 
       
 
