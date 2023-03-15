@@ -167,6 +167,12 @@
 	        border-color: #ffcc33 !important;
 	    }
 
+        .button-td-secondary:hover,
+	    .button-a-secondary:hover {
+	        background: #ffcc33 !important;
+	        border-color: #ffcc33 !important;
+	    }
+
 	    /* Media Queries */
 	    @media screen and (max-width: 600px) {
 
@@ -205,9 +211,34 @@
 				background: #cccccc !important;
 				border-color: #cccccc !important;
 			}
+            
+			td.button-td-secondary,
+			td.button-td-secondary a {
+				background: #d2d2d2 !important;
+				border-color: #d2d2d2 !important;
+				color: #235937 !important;
+			}
+			td.button-td-secondary:hover,
+			td.button-td-secondary a:hover {
+				background: #ffcc33 !important;
+				border-color: #ffcc33 !important;
+
 			.footer td {
 				color: #222222 !important;
 			}
+
+            .cta-area-bg td {
+				color: #235937 !important;
+			}
+
+            .callout-text-gold {
+				color: #ffcc33 !important;
+			}
+
+            .callout-text-ltgray {
+				color: #f2f2f2 !important;
+			}
+
             /* .darkmode-fullbleed-bg {
                 background-color: #0f3016 !important;
             } */
@@ -324,30 +355,64 @@
  
                 <!-- 1 Column Text : BEGIN -->
                 <tr>
-                    <td style="background-color: #ffffff;" class="darkmode-bg">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <td align="left" style="padding: 0px 40px 20px 40px;">
+
+                        <table width="435" align="left" border="0">
                             <tr>
-                                <td style="padding: 20px; font-family:'Montserrat', sans-serif; font-size: 1rem; line-height: 1.25rem; color: #555555;">
-                                    <p style="margin: 0;">Text above the footer ... Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
-                                </td>
+                              <td width="85">
+                                <img src="https://apply.oswego.edu/www/images/CAM-gabrielle-golfo-circle.png" width="75" height="75" style="margin:0; padding:0; border:none; display:block;" border="0" alt="Profile Picture of Gabby">
+                              </td>
+                              <td width="350">
+                                
+                                <table align="left" width="350px" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td align="left" style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; color:#222222; font-weight:bold;">
+                                            <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; color:#222222; font-weight:bold; padding:0; margin:0;">Gabrielle Golfo</span>   
+                                          </td>   
+                                          <tr>
+                                            <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; color:#666666;">
+                                              <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; color:#666666; padding:0; margin:0;">she/her/hers</span>  
+                                        </tr> 
+                                  <tr>
+                                    <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; color:#666666;">
+                                      <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; color:#666666; padding:0; margin:0;">NYC Admissions Counselor</span>  
+                                </tr>   
+
+                                <tr>
+                                    <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; color:#666666;">
+                                      <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; color:#666666; padding:0; margin:0;">315.312.2250</span>  
+                                </tr>   
+
+
+                                <tr>
+                                    <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; color:#666666;">
+                                      <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; color:#666666; padding:0; margin:0;"><a href="mailto:gabrielle.golfo@oswego.edu">gabrielle.golfo@oswego.edu</a></span>  
+                                </tr>    
+                                                                                                      
+                                </table>
+                               
+
+                              </td>                        
                             </tr>
+        
                         </table>
+                
                     </td>
                 </tr>
                 <!-- 1 Column Text : END -->
 
-<!-- 1 Column Text + Button : BEGIN -->
+<!-- 1 Column Text + Secondary Button : BEGIN -->
 <tr>
-    <td style="background-color: #235937;">
+    <td class="callout-text-ltgray" style="background-color: #235937;">
         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
-                <td style="padding: 15px 30px 10px 30px; font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #f2f2f2; background-color:#235937 !important;">
-                    <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; line-height: 1.5rem; color: #f2f2f2 important; text-align: center; font-weight: bold; text-transform: uppercase;">The Place to Go</h2>                    
+                <td class="callout-text-ltgray" style="padding: 15px 30px 10px 30px; font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #f2f2f2; background-color:#235937 !important;">
+                    <h2 class="callout-text-ltgray" style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; line-height: 1.5rem; color: #f2f2f2; text-align: center; font-weight: bold; text-transform: uppercase;">The Place to Go</h2>                    
                 </td>
             </tr>
             <tr>
-                <td style="padding: 0px 30px 15px 30px; font-family: sans-serif; font-size: 1.0625rem; line-height: 1.4375rem; text-align: center; color: #ffcc33 !important; font-weight:normal; background-color:#235937 !important;">
-                    <p style="margin: 0;">{{Preferred}} can find alerts & updates in the applicant portal:</p>
+                <td class="callout-text-gold" style="padding: 0px 30px 15px 30px; font-family: sans-serif; font-size: 1.0625rem; line-height: 1.4375rem; text-align: center; color: #ffcc33 !important; font-weight:normal; background-color:#235937 !important;">
+                    <p class="callout-text-gold" style="margin: 0; color: #ffcc33 !important;">{{Preferred}} can find alerts & updates in the applicant portal:</p>
                 </td>
             </tr>
             <tr>
@@ -355,8 +420,8 @@
                     <!-- Button : BEGIN -->
                     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                         <tr>
-                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #f2f2f2;">
-                                 <a class="button-a button-a-primary" href="https://www.oswego.edu" style="background: #f2f2f2; border: 1px solid #f2f2f2; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #235937; display: block; text-transform: uppercase; border-radius: 4px;">About the Portal</a>
+                            <td class="button-td button-td-secondary" style="border-radius: 4px; background: #f2f2f2;">
+                                 <a class="button-a button-a-secondary" href="https://www.oswego.edu" style="background: #f2f2f2; border: 1px solid #f2f2f2; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #235937; display: block; font-weight: bold; text-transform: uppercase; border-radius: 4px;">About the Portal</a>
                             </td>
                         </tr>
 
@@ -377,6 +442,8 @@
         </table>
     </td>
 </tr>
+<!-- 1 Column Text + Secondary Button : END -->
+
 
             </table>
             <!-- Email Body : END -->
