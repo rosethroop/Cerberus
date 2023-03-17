@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
-    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title>A note from SUNY Oswego</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
     <!--[if gte mso 9]>
@@ -33,7 +33,7 @@
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
-    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
@@ -156,6 +156,30 @@
     <!-- Progressive Enhancements : BEGIN -->
     <style>
 
+        /* unvisited link Oz*/
+        a:link {
+        color: #498957;
+        text-decoration: underline;
+        }
+
+        /* visited link Oz*/
+        a:visited {
+        color: #498957;
+        text-decoration: underline;
+        }
+
+        /* mouse over link Oz*/
+        a:hover {
+        color: #222222;
+        text-decoration: underline;
+        }
+
+        /* selected link Oz*/
+        a:active {
+        color: #222222;
+        text-decoration: underline;
+        }
+
 	    /* What it does: Hover styles for buttons */
 	    .button-td,
 	    .button-a {
@@ -165,6 +189,13 @@
 	    .button-a-primary:hover {
 	        background: #555555 !important;
 	        border-color: #555555 !important;
+	    }
+
+         /* rt oz button */
+        .button-td-secondary:hover,
+	    .button-a-secondary:hover {
+	        background: #ffcc33 !important;
+	        border-color: #ffcc33 !important;
 	    }
 
 	    /* Media Queries */
@@ -180,7 +211,7 @@
         /* Dark Mode Styles : BEGIN */
         @media (prefers-color-scheme: dark) {
 			.email-bg {
-				background: #285438 !important;
+				background: #666666 !important;
 			}
             .darkmode-bg {
                 background: #333333 !important;
@@ -205,9 +236,63 @@
 				background: #cccccc !important;
 				border-color: #cccccc !important;
 			}
-			.footer td {
-				color: #222222 !important;
+		
+            /* rt oz button darkmode*/
+            td.button-td-secondary,
+			td.button-td-secondary a {
+				background: #d2d2d2 !important;
+				border-color: #d2d2d2 !important;
+				color: #235937 !important;
 			}
+			td.button-td-secondary:hover,
+			td.button-td-secondary a:hover {
+				background: #ffcc33 !important;
+				border-color: #ffcc33 !important;
+            }
+
+            /* rt oz darkmode unvisited link */
+            a:link {
+            color: #f7bb16;
+            text-decoration: underline;
+            }
+
+            /* rt oz darkmode visited link */
+            a:visited {
+            color: #f7bb16;
+            text-decoration: underline;
+            }
+
+            /* rt oz darkmode mouse over link */
+            a:hover {
+            color: #f2f2f2;
+            text-decoration: underline;
+            }
+
+            /* rt oz darkmode selected link */
+            a:active {
+            color: #f2f2f2;
+            text-decoration: underline;
+            }
+
+            .footer td {
+				color: #235937 !important;
+			}
+
+            /* rt cta area td style */
+            .cta-area-bg td {
+				color: #235937 !important;
+			}
+
+            /* rt text styles */
+            .callout-text-gold {
+				color: #f7bb16 !important;
+			}
+
+            /* rt text styles */
+            .callout-text-ltgray {
+				color: #f2f2f2 !important;
+			}
+
             /* .darkmode-fullbleed-bg {
                 background-color: #0f3016 !important;
             } */
@@ -218,15 +303,15 @@
 
 </head>
 <!--
-	The email background color (#235937) is defined in three places:
+	The email background color (#999999) is defined in three places:
 	1. body tag: for most email clients
 	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
 	3. mso conditional: For Windows 10 Mail
 -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #235937;" class="email-bg">
-	<center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #235937;" class="email-bg">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #999999;" class="email-bg">
+	<center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #999999;" class="email-bg">
     <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #235937;" class="email-bg">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #999999;" class="email-bg">
     <tr>
     <td>
     <![endif]-->
@@ -389,13 +474,13 @@
                             <tbody>
                     <!-- Clear Spacer : BEGIN -->
                 <tr>
-                    <td aria-hidden="true" height="10" style="font-size: 0px; line-height: 0px; background-color:#222222 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                    <td aria-hidden="true" height="10" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
                 &nbsp;
                     </td>
                 </tr>
                     <!-- Clear Spacer : END -->
                                 <tr>
-                                    <td style="font-size: 1rem; line-height: 0px; background-color:#222222 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                                    <td style="font-size: 1rem; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
                                       
 
                                             <p style="text-decoration:none; color:#f2f2f2 !important; font-size:.75rem !important; line-height:1.25rem !important; font-family:Arial,Helvetica,sans-serif;"><a href="https://www.oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif !important;"><img alt="SUNY Oswego" src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" style="margin-bottom:10px; width:190px;" width="190px"></a><br>
@@ -407,7 +492,7 @@
                                             </p>
 
                     <!-- SOCIAL : BEGIN -->
-                                            <table style="width: 200px; border: 0px solid; margin: auto; padding:0; border-spacing: 0; background-color:#222222;" role="presentation" aria-label="social media buttons" class="footer">
+                                            <table style="width: 200px; border: 0px solid; margin: auto; padding:0; border-spacing: 0; background-color:#235937;" role="presentation" aria-label="social media buttons" class="footer">
                                                 <tbody>
                                                     <tr>
                                                         <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.facebook.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Facebook" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/facebook.png"></a></td>
@@ -429,7 +514,7 @@
 
                     <!-- Clear Spacer : BEGIN -->
                          <tr>
-                            <td aria-hidden="true" height="30" style="font-size: 0px; line-height: 0px; background-color:#222222 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                            <td aria-hidden="true" height="30" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
                         &nbsp;
                             </td>
                         </tr>
