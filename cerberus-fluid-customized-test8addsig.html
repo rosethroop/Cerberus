@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
     <meta name="color-scheme" content="light dark">
     <meta name="supported-color-schemes" content="light dark">
-    <title>A note from your SUNY Oswego Admissions counselor</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title>A note from SUNY Oswego</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
     <!--[if gte mso 9]>
@@ -32,7 +32,7 @@
     <![endif]-->
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
-  <!--[if !mso]><!-->
+    <!--[if !mso]><!-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!--<![endif]-->
 
@@ -187,10 +187,11 @@
 	    }
 	    .button-td-primary:hover,
 	    .button-a-primary:hover {
-	        background: #ffcc33 !important;
-	        border-color: #ffcc33 !important;
+	        background: #555555 !important;
+	        border-color: #555555 !important;
 	    }
 
+         /* rt oz button */
         .button-td-secondary:hover,
 	    .button-a-secondary:hover {
 	        background: #ffcc33 !important;
@@ -235,8 +236,9 @@
 				background: #cccccc !important;
 				border-color: #cccccc !important;
 			}
-            
-			td.button-td-secondary,
+		
+            /* rt oz button darkmode*/
+            td.button-td-secondary,
 			td.button-td-secondary a {
 				background: #d2d2d2 !important;
 				border-color: #d2d2d2 !important;
@@ -247,7 +249,7 @@
 				background: #ffcc33 !important;
 				border-color: #ffcc33 !important;
             }
-            
+
             /* rt oz darkmode unvisited link */
             a:link {
             color: #f7bb16;
@@ -273,17 +275,20 @@
             }
 
             .footer td {
-				color: #222222 !important;
-			}
-
-            .cta-area-bg td {
 				color: #235937 !important;
 			}
 
+            /* rt cta area td style */
+            .cta-area-bg td {
+				background-color: #444444 !important;
+			}
+
+            /* rt text styles */
             .callout-text-gold {
 				color: #f7bb16 !important;
 			}
 
+            /* rt text styles */
             .callout-text-ltgray {
 				color: #f2f2f2 !important;
 			}
@@ -298,7 +303,7 @@
 
 </head>
 <!--
-	The email background color (#235937) is defined in three places:
+	The email background color (#999999) is defined in three places:
 	1. body tag: for most email clients
 	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
 	3. mso conditional: For Windows 10 Mail
@@ -313,7 +318,7 @@
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
-        Is {{Preferred}} #OswegoBound? #GoOswego #JoinOz #SUNYOswego
+            Has {{Preferred}} completed these steps?
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
@@ -341,28 +346,28 @@
 		        <!-- Email Header : BEGIN -->
 	            <tr>
 	                <td style="padding: 20px 0; text-align: center">
-	                    <a href="www.oswego.edu/"><img src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" width="200" height="50" alt="State University of New York at Oswego" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #F7F7F9;"></a>
+	                    <a href="https://www.oswego.edu"><img src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" width="200" height="50" alt="State University of New York at Oswego" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #F7F7F9;"></a>
 	                </td>
 	            </tr>
 		        <!-- Email Header : END -->
 
-
-
-                <!-- 1 Column Text: BEGIN -->
+                <!-- 1 Column Text + Button : BEGIN -->
                 <tr>
                     <td style="background-color: #ffffff;" class="darkmode-bg">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 20px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #222222;">
+                                <td style="padding: 30px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
                                     <h1 style="margin: 0 0 0 0; font-family: 'Montserrat', sans-serif; font-size: 1.75rem; line-height: 2.25rem; color: #222222; font-weight: bold;">Congratulations on {{Preferred}}’s acceptance to Oswego!</h1>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #333333; text-align: left; font-weight:bold;">
                                     <p style="margin: 0;">It was a big day for your student and for you! As a partner in this college process, thank you for helping nudge, remind or perhaps even badger your student to complete the necessary steps in this crazy admissions journey! </p>
                                 </td>
                             </tr>
-                            <tr>
+                            
+                           <tr>
                                 <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
                                     <p style="margin: 0;">Like many families, you may find the process overwhelming at times, but please know I’m here to help you along the way. Here is my contact information: </p>
                                 </td>
@@ -396,152 +401,156 @@
                                 </td>
                             </tr>
 
-                        </table>
-                    </td>
-                </tr>
-                <!-- 1 Column Text: END -->
-
- 
-                <!-- 1 Column Text w Signature Table: BEGIN -->
-                <tr>
-                    <td align="left" style="background-color: #ffffff; padding: 10px 40px 20px 30px;" class="darkmode-bg">
-                   
-                        <table role="presentation" width="435" align="left" border="0">
                             <tr>
-                              <td width="85">
-                                <img src="https://apply.oswego.edu/www/images/CAM-kate-anderson-circle.png" width="75" height="75" style="margin:0; padding:0; border:none; display:block;" border="0" alt="Profile Picture of Kate">
-                              </td>
-                              <td width="350">
-                                
-                                <table align="left" width="350px" cellpadding="0" cellspacing="0" border="0">
-
-                                    <tr>
-                                        <td align="left" style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; font-weight:bold;">
-                                            <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; font-weight:bold; padding:0; margin:0;">Gabrielle Golfo</span>
-                                        </td>
-                                        </td>   
-                                          <tr>
-                                            <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;">
-                                              <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">she/her/hers</span> </td> 
-                                          </tr> 
-                                  <tr>
-                                    <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">NYC Admissions Counselor</span>  </td>
-                                </tr>   
-
-                                <tr>
-                                    <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;">
-                                      <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">315.312.2250</span>  </td>
-                                </tr>   
-
-
-                                <tr>
-                                    <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; ">
-                                      <span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;"><a href="mailto:kate.anderson@oswego.edu">kate.anderson@oswego.edu</a></span>  </td>
-                                </tr>    
-
-                                                                                                      
-                                </table>
-                               
-
-                              </td>                        
+                                <td class="cta-area-bg" style="padding: 10px 30px 10px 30px; background-color:#555555!important;" >
+                                    <!-- Button : BEGIN -->
+                                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                        <tr>
+                                            <td class="button-td button-td-secondary" style="border-radius: 4px; background-color:#f2f2f2;">
+											     <a class="button-a button-a-secondary" href="https://www.oswego.edu" style="background: #f2f2f2; border: 1px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #222222; display: block; border-radius: 4px;">Secondary Button first table</a>
+											</td>
+                                        </tr>
+                                    </table>
+                                    <!-- Button : END -->
+                                </td>
                             </tr>
-        
+
                         </table>
-                
-                    </td>
-                </tr>
-                <!-- 1 Column Text w Signature Table: END -->
-
-                <!-- 1 Column Text + Secondary Button : BEGIN -->
-
-                <tr>
-                    <td class="callout-text-ltgray" style="background-color: #235937;">
-       
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                             <td class="callout-text-ltgray" style="padding: 15px 30px 10px 30px; font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #f2f2f2; background-color:#235937 !important;">
-                               <h2 class="callout-text-ltgray" style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; line-height: 1.5rem; color: #f2f2f2; text-align: center; font-weight: bold; text-transform: uppercase;">The Place to Go</h2>                    
-                             </td>
-                         </tr>
-                         <tr>
-                              <td class="callout-text-gold" style="padding: 0px 30px 15px 30px; font-family: sans-serif; font-size: 1.0625rem; line-height: 1.4375rem; text-align: center; color: #f7bb16 !important; font-weight:normal; background-color:#235937 !important;">
-                              <p class="callout-text-gold" style="margin: 0; color: #f7bb16 !important;">{{Preferred}} can find alerts & updates in the applicant portal:</p>
-                             </td>
-                </tr>
-                <tr>
-                    <td style="padding: 0 20px; background-color: #235937;!important;">
-                        <!-- Button : BEGIN -->
-                        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
-                            <tr>
-                               <td class="button-td button-td-secondary" style="border-radius: 4px; background: #f2f2f2;">
-                                 <a class="button-a button-a-secondary" href="https://www.oswego.edu" style="background: #f2f2f2; border: 1px solid #f2f2f2; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #235937; display: block; font-weight: bold; text-transform: uppercase; border-radius: 4px;">About the Portal</a>
-                               </td>
-                            </tr>
-                        </table>
-                         <!-- Button : END -->
-
-                <!-- Clear Spacer : BEGIN -->
-                <tr>
-                     <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
-                     &nbsp;
-                     </td>
-                </tr>
-                <!-- Clear Spacer : END -->
-
-            </td>
-        </tr>
-
-     </table>
-    </td>
-</tr>
-<!-- 1 Column Text + Secondary Button : END -->
-
-
-<!-- 1 Column Text + Footer : BEGIN -->
-
-<tr>
-    <td class="callout-text-ltgray" style="background-color: #222222;">
-        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-            <tr>
-                <td style="padding: 15px 30px 10px 30px; font-family: sans-serif; font-size: 15px; line-height: 20px; text-align: center; color: #f2f2f2; background-color:#235937 !important;">
-                
                     
-                </td>
-            </tr>
-            <tr>
-                <td style="padding: 0px 30px 15px 30px; font-family: sans-serif; font-size: 1.0625rem; line-height: 1.4375rem; text-align: center; color: #f7bb16 !important; font-weight:normal; background-color:#222222 !important;">
-                    <p class="callout-text-ltgray" style="margin: 0; color: #f7bb16 !important;">{{Preferred}} can find alerts & updates in the applicant portal:</p>
-                </td>
-            </tr>
-                <!-- Clear Spacer : BEGIN -->
-            <tr>
-                <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px; background-color:#222222 !important; padding: 0px 0px 0px 0px; text-align: center;">
-                &nbsp;
-                </td>
+                <!-- 1 Column Text : BEGIN -->
+                <tr>
+                    <td style="background-color: #ffffff;" class="darkmode-bg">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                            
+
+                                    <table role="presentation" width="435" align="left" border="0">
+                                        <tr>
+                                          <td width="85" rowspan="6"><img src="https://apply.oswego.edu/www/images/CAM-kate-anderson-circle.png" width="75" height="75" style="margin:0; padding:0; border:none; display:block;" border="0" alt="Profile Picture of Kate">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; font-weight:bold;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; font-weight:bold; padding:0; margin:0;">Kate Anderson</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">she/her/hers</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">Long Island Admissions Counselor</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">315.312.2250</span>
+                                          </td>
+                                        </tr> 
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; "><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;"><a href="mailto:kate.anderson@oswego.edu">kate.anderson@oswego.edu</a></span>
+                                          </td>
+                                        </tr> 
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
-                <!-- Clear Spacer : END -->
+                <!-- 1 Column Text : END -->
 
-                </td>
-            </tr>
-
-        </table>
-    </td>
-</tr>
-<!-- 1 Column Text + Secondary Button : END -->
+                 <!-- 1 Column Text : BEGIN -->
+                 <tr>
+                    <td class="cta-area-bg" style="padding: 10px 30px 10px 30px; background-color:#555555!important;" >
+                       <!-- Button : BEGIN -->
+                       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                            <td class="button-td button-td-secondary" style="border-radius: 4px; background-color:#f2f2f2;">
+                                 <a class="button-a button-a-secondary" href="https://www.oswego.edu" style="background: #f2f2f2; border: 1px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #222222; display: block; border-radius: 4px;">Secondary Button 2nd table</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Button : END -->
+                    </td>
+                </tr>
+                <!-- 1 Column Text : END -->
 
             </table>
             <!-- Email Body : END -->
 
-            <!-- Oz Email Footer : BEGIN -->
+            <!-- New Email Footer : BEGIN -->
 
-            <!-- Oz Email Footer : END -->
+            
+
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="footer">
+                <tr>
+                    <td style="padding: 0px 0px 0px 0px; text-align: center;">
+                        
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" role="presentation">
+                            <tbody>
+                    <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td aria-hidden="true" height="10" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                &nbsp;
+                    </td>
+                </tr>
+                    <!-- Clear Spacer : END -->
+                                <tr>
+                                    <td style="font-size: 1rem; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                                      
+
+                                            <p style="text-decoration:none; color:#f2f2f2 !important; font-size:.75rem !important; line-height:1.25rem !important; font-family:Arial,Helvetica,sans-serif;"><a href="https://www.oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif !important;"><img alt="SUNY Oswego" src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" style="margin-bottom:10px; width:190px;" width="190px"></a><br>
+                                                Office of Admissions<br>
+                                                229 Sheldon Hall<br>
+                                                Oswego, New York 13126-3599<br>
+                                                <br>
+                                                <a href="tel:+13153122250" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem !important; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif !important;">315.312.2250</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:admiss@oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem !important; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif!important;">admiss@oswego.edu</a>
+                                            </p>
+
+                    <!-- SOCIAL : BEGIN -->
+                                            <table style="width: 200px; border: 0px solid; margin: auto; padding:0; border-spacing: 0; background-color:#235937;" role="presentation" aria-label="social media buttons" class="footer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.facebook.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Facebook" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/facebook.png"></a></td>
+                                                        
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.instagram.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Instagram" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/instagram.png"></a></td>
+                                                        
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.twitter.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Twitter" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/twitter.png"></a></td>
+                                                        
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.youtube.com/sunyoswegovideo" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="YouTube" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/youtube.png"></a></td>
+                                                    </tr>
+                                                    <tr><td style="padding: 10px 0px 0px 0px; font-family: sans-serif; font-size: .5rem; line-height: 1rem; text-align: center; font-weight:normal;" colspan="4"><span style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem!important; line-height:1rem!important; font-family:Arial,Helvetica,sans-serif;">Copyright &copy; SUNY Oswego 2023 | {{Banner-ID}}</span></td></tr>
+
+                                                </tbody>
+                                            </table>
+                 <!-- SOCIAL : END -->                                        
+                                        
+                                    </td>
+                                </tr>
+
+                    <!-- Clear Spacer : BEGIN -->
+                         <tr>
+                            <td aria-hidden="true" height="30" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                        &nbsp;
+                            </td>
+                        </tr>
+                    <!-- Clear Spacer : END -->
+                            </tbody>
+                        </table>
+
+
+
+
+            <!-- New Email Footer : END -->
+
+      
 
             <!--[if mso]>
             </td>
             </tr>
             </table>
             <![endif]-->
-    </div>
+        </div>
 
       
 
