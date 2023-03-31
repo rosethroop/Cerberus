@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>A note from your SUNY Oswego Admissions counselor</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Tells the email client that both light and dark styles are provided. A duplicate of meta color-scheme meta tag above. */
+        :root {
+          color-scheme: light dark;
+          supported-color-schemes: light dark;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody, #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+
+        /* unvisited link Oz*/
+        a:link {
+        color: #235937;
+        text-decoration: underline;
+        }
+
+        /* visited link Oz*/
+        a:visited {
+        color: #235937;
+        text-decoration: underline;
+        }
+
+        /* mouse over link Oz*/
+        a:hover {
+        color: #222222;
+        text-decoration: underline;
+        }
+
+        /* selected link Oz*/
+        a:active {
+        color: #222222;
+        text-decoration: underline;
+        }
+
+	    /* What it does: Hover styles for buttons */
+	    .button-td,
+	    .button-a {
+	        transition: all 100ms ease-in;
+	    }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #555555 !important;
+	        border-color: #555555 !important;
+	    }
+
+         /* rt oz button */
+        .button-td-secondary:hover,
+	    .button-a-secondary:hover {
+	        background: #ffcc33 !important;
+	        border-color: #ffcc33 !important;
+	    }
+
+	    /* Media Queries */
+	    @media screen and (max-width: 600px) {
+
+	        /* What it does: Adjust typography on small screens to improve readability */
+	        .email-container p {
+	            font-size: 17px !important;
+	        }
+
+	    }
+
+        /* Dark Mode Styles : BEGIN */
+        @media (prefers-color-scheme: dark) {
+			.email-bg {
+				background: #666666 !important;
+			}
+            .darkmode-bg {
+                background: #262626 !important;
+            }
+			h1,
+			h2,
+			h3,
+			p,
+			li,
+			.darkmode-text,
+			.email-container a:not(a) {
+				color: #F7F7F9 !important;
+			}
+			td.button-td-primary,
+			td.button-td-primary a {
+				background: #d2d2d2 !important;
+				border-color: #d2d2d2 !important;
+				color: #222222 !important;
+			}
+			td.button-td-primary:hover,
+			td.button-td-primary a:hover {
+				background: #cccccc !important;
+				border-color: #cccccc !important;
+			}
+		
+            /* rt oz button darkmode*/
+            td.button-td-secondary,
+			td.button-td-secondary a {
+				background: #d2d2d2 !important;
+				border-color: #d2d2d2 !important;
+				color: #235937 !important;
+			}
+			td.button-td-secondary:hover,
+			td.button-td-secondary a:hover {
+				background: #ffcc33 !important;
+				border-color: #ffcc33 !important;
+            }
+
+            /* rt oz darkmode unvisited link */
+            a:link {
+            color: #f7bb16;
+            text-decoration: underline;
+            }
+
+            /* rt oz darkmode visited link */
+            a:visited {
+            color: #f7bb16;
+            text-decoration: underline;
+            }
+
+            /* rt oz darkmode mouse over link */
+            a:hover {
+            color: #f2f2f2;
+            text-decoration: underline;
+            }
+
+            /* rt oz darkmode selected link */
+            a:active {
+            color: #f2f2f2;
+            text-decoration: underline;
+            }
+
+            .footer td {
+				color: #235937 !important;
+			}
+
+            /* rt cta area td style */
+            .cta-area-bg td {
+				background-color: #444444 !important;
+			}
+
+            /* rt text styles */
+            .callout-text-gold {
+				color: #f7bb16 !important;
+			}
+
+            /* rt text styles */
+            .callout-text-ltgray {
+				color: #f2f2f2 !important;
+			}
+
+            /* .darkmode-fullbleed-bg {
+                background-color: #0f3016 !important;
+            } */
+		}
+        /* Dark Mode Styles : END */
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#999999) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #999999;" class="email-bg">
+	<center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #999999;" class="email-bg">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #999999;" class="email-bg">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+            Has {{Preferred}} completed these steps?
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don't pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+        -->
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+            <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
+            <tr>
+            <td>
+            <![endif]-->
+
+	        <!-- Email Body : BEGIN -->
+	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+		        <!-- Email Header : BEGIN -->
+	            <tr>
+	                <td style="padding: 20px 0; text-align: center">
+	                    <a href="https://www.oswego.edu"><img src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" width="200" height="50" alt="State University of New York at Oswego" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #F7F7F9;"></a>
+	                </td>
+	            </tr>
+		        <!-- Email Header : END -->
+
+                <!-- 1 Column Text + Button : BEGIN -->
+                <tr>
+                    <td style="background-color: #ffffff;" class="darkmode-bg">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 30px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1.75rem; line-height: 2.25rem; color: #555555;">
+                                    <h1 style="margin: 0 0 0 0; font-family: 'Montserrat', sans-serif; font-size: 1.75rem; line-height: 2.25rem; color: #000000; font-weight: bold;">Congratulations on {{Preferred}}’s acceptance to Oswego!</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #222222; text-align: left; font-weight:bold;">
+                                    <p style="margin: 0;">It was a big day for your student and for you! As a partner in this college process, thank you for helping nudge, remind or perhaps even badger your student to complete the necessary steps in this crazy admissions journey! </p>
+                                </td>
+                            </tr>
+                            
+                           <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <p style="margin: 0;">Like many families, you may find the process overwhelming at times, but please know I’m here to help you along the way. Here is my contact information: </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <p style="margin: 0;">
+                                        Cell: 315.529.3378<br>
+                                        Email: <a href="mailto:kate.anderson@oswego.edu">kate.anderson@oswego.edu</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <p style="margin: 0;">You’ll be receiving important information from our community partners. I would suggest creating a file or box at home where you can set aside information as you receive it and review it together.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.5rem; color: #555555; text-align: left; font-weight:normal;">
+                                    <h2 style="margin: 0 0 10px 0; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; line-height: 1.75rem; color: #222222; font-weight: bold;">As a key supporter, please consider assisting in the following ways:</h2>
+                                    <ol>  
+                                        <li style="margin:0 0 10px 0px;" class="list-item-first">Has {{Preferred}} applied for Financial Aid? You can request help from our friendly Financial Aid Office by calling 315.312.2248. Students and families reapply for aid from year to year, so keep aid application info together with your important documents.</li>
+
+                                        <li style="margin:0 0 10px 0px;">Plan a visit! It’s about fit and we want to make sure Oswego is going to be right for {{Preferred}}. Register for in-person and/or virtual visits at <a href="https://ww1.oswego.edu/admissions/undergraduate-admissions/plan-your-visit">oswego.edu/visit</a>.</li>
+
+                                        <li style="margin:0 0 10px 0px;">The Applicant Portal is one way we keep students posted about next steps in the enrollment process, so encourage {{Preferred}} to check it regularly. <a href="https://ww1.oswego.edu/admissions/undergraduate-admissions/applicant-portal">oswego.edu/appstatus</a>.</li>
+
+                                        <li style="margin: 0 0 0 0px;" class="list-item-last">Stay in touch! I’m here to help you navigate this process.</li>
+                                    </ol>
+                                    <p style="margin: 0;">Again, congratulations! I look forward to hearing from you. 
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    
+                <!-- 1 Column Text : BEGIN -->
+                <tr>
+                    <td style="background-color: #ffffff;" class="darkmode-bg">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 0px 30px 30px 30px; font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 20px;">
+                            
+
+                                    <table role="presentation" align="left" border="0" style="background-color: #ffffff;" class="darkmode-bg">
+                                        <tr>
+                                          <td width="85" rowspan="6"><img src="https://apply.oswego.edu/www/images/CAM-kate-anderson-circle.png" width="75" height="75" style="margin:0; padding:0; border:none; display:block;" border="0" alt="Profile Picture of Kate">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; font-weight:bold;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; font-weight:bold; padding:0; margin:0;">Kate Anderson</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">she/her/hers</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">Long Island Admissions Counselor</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem;"><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;">315.529.3378</span>
+                                          </td>
+                                        </tr> 
+                                        <tr>
+                                          <td align="left" style="font-family: 'Montserrat', sans-serif;  font-size: .75rem; line-height: 1rem; "><span style="font-family: 'Montserrat', sans-serif; font-size: .75rem; line-height: 1rem; padding:0; margin:0;"><a href="mailto:kate.anderson@oswego.edu">kate.anderson@oswego.edu</a></span>
+                                          </td>
+                                        </tr> 
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- 1 Column Text : END -->
+
+                 <!-- 1 Column Text : BEGIN -->
+                 <tr>
+                    <td class="cta-area-bg" style="padding: 10px 30px 10px 30px; background-color:#555555!important;" >
+                       
+                        <h2 class="callout-text-ltgray" style="margin: 0; padding: 10px 30px 0px 30px; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; line-height: 1.5rem; color: #f2f2f2; text-align: center; font-weight: bold; text-transform: uppercase;">The Place to Go</h2>
+
+                        <p class="callout-text-gold" style="margin: 0; padding: 10px 0px 15px 0px; font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.25rem; text-align: center; color: #f7bb16 !important;">{{Preferred}} can find alerts & updates in the applicant portal:</p>
+
+                       <!-- Button : BEGIN -->
+                       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                        <tr>
+                            <td class="button-td button-td-secondary" style="border-radius: 4px; background-color:#f2f2f2;">
+                                 <a class="button-a button-a-secondary" href="https://ww1.oswego.edu/admissions/undergraduate-admissions/applicant-portal" style="background: #f2f2f2; border: 1px solid #ffffff; font-family: 'Montserrat', sans-serif; font-weight: bold; text-transform: uppercase; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #222222; display: block; border-radius: 4px;">About the Portal</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Button : END -->
+                    </td>
+                    <tr>
+                        <td class="cta-area-bg" aria-hidden="true" height="10" style="padding: 10px 30px 10px 30px; font-size: 0px; line-height: 0px; background-color:#555555!important; text-align: center;">
+                        &nbsp;
+                        </td>
+                    </tr>
+            
+                <!-- 1 Column Text : END -->
+
+            </table>
+            <!-- Email Body : END -->
+
+            <!-- New Email Footer : BEGIN -->
+
+            
+
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="footer">
+                <tr>
+                    <td style="padding: 0px 0px 0px 0px; text-align: center;">
+                        
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;" role="presentation">
+                            <tbody>
+                    <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td aria-hidden="true" height="10" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                &nbsp;
+                    </td>
+                </tr>
+                    <!-- Clear Spacer : END -->
+                                <tr>
+                                    <td style="font-size: 1rem; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                                      
+
+                                            <p style="text-decoration:none; color:#f2f2f2 !important; font-size:.75rem !important; line-height:1.25rem !important; font-family:Arial,Helvetica,sans-serif;"><a href="https://www.oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif !important;"><img alt="SUNY Oswego" src="https://apply.oswego.edu/www/images/undergraduate/Oswego-logo-f2f2f2-drop.png" style="margin-bottom:10px; width:190px;" width="190px"></a><br>
+                                                Office of Admissions<br>
+                                                229 Sheldon Hall<br>
+                                                Oswego, New York 13126-3599<br>
+                                                <br>
+                                                <a href="tel:+13153122250" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem !important; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif !important;">315.312.2250</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:admiss@oswego.edu" style="text-decoration:none; color: #f2f2f2 !important; font-size:.75rem !important; line-height:1.25 !important; font-family:Arial,Helvetica,sans-serif!important;">admiss@oswego.edu</a>
+                                            </p>
+
+                    <!-- SOCIAL : BEGIN -->
+                                            <table style="width: 200px; border: 0px solid; margin: auto; padding:0; border-spacing: 0; background-color:#235937;" role="presentation" aria-label="social media buttons" class="footer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.facebook.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Facebook" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/facebook.png"></a></td>
+                                                        
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.instagram.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Instagram" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/instagram.png"></a></td>
+                                                        
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.twitter.com/sunyoswego" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="Twitter" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/twitter.png"></a></td>
+                                                        
+                                                        <td width="42px" style="padding:0px 9px; width:42px; text-align: center; vertical-align: bottom; border: 0px solid;"><a href="http://www.youtube.com/sunyoswegovideo" target="blank" style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem !important; line-height: 1.25rem!important; font-family:Arial,Helvetica,sans-serif!important;"><img alt="YouTube" style="width:42px; border: 0px solid;" src="https://apply.oswego.edu/www/images/undergraduate/youtube.png"></a></td>
+                                                    </tr>
+                                                    <tr><td style="padding: 10px 0px 0px 0px; font-family: sans-serif; font-size: .5rem; line-height: 1rem; text-align: center; font-weight:normal;" colspan="4"><span style="text-decoration:none !important; color: #f2f2f2; font-size:.5rem!important; line-height:1rem!important; font-family:Arial,Helvetica,sans-serif;">Copyright &copy; SUNY Oswego 2023 | {{Banner-ID}}</span></td></tr>
+
+                                                </tbody>
+                                            </table>
+                 <!-- SOCIAL : END -->                                        
+                                        
+                                    </td>
+                                </tr>
+
+                    <!-- Clear Spacer : BEGIN -->
+                         <tr>
+                            <td aria-hidden="true" height="30" style="font-size: 0px; line-height: 0px; background-color:#235937 !important; padding: 0px 0px 0px 0px; text-align: center;">
+                        &nbsp;
+                            </td>
+                        </tr>
+                    <!-- Clear Spacer : END -->
+                            </tbody>
+                        </table>
+
+
+
+
+            <!-- New Email Footer : END -->
+
+      
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+
+      
+
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>
